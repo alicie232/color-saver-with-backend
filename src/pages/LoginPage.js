@@ -22,6 +22,7 @@ export default function LoginPage({ onLogin }) {
           labelText={"Your name"}
           type={"text"}
           onChange={(event) => setUser(event.target.value.trim())}
+          value={user}
           required
         />
         <Button type="submit">Submit</Button>
