@@ -29,7 +29,11 @@ export default function TrendingPalettesPage() {
             <Flex>
               {palette.colors.map((color) => {
                 return (
-                  <ColorBox key={color.id} color={color.code} readOnly={true} />
+                  <ColorBox
+                    key={color._id}
+                    color={color.code}
+                    readOnly={true}
+                  />
                 );
               })}
             </Flex>

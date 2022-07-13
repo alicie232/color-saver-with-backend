@@ -6,7 +6,7 @@ import { ColorForm } from "./ColorForm";
 import Input from "./Input.js";
 
 export const ColorPalette = ({ palette, onChange }) => {
-  const [name, setName] = useState();
+  const [name, setName] = useState("");
   const [nameDirty, setNameDirty] = useState(false);
 
   useEffect(() => {
