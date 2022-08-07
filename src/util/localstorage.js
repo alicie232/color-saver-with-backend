@@ -10,3 +10,7 @@ export const loadFromLocalStorage = (key) => {
 export const writeToLocalStorage = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 };
+
+export const deleteFromLocalStorage = () => {
+  localStorage.clear();
+};
